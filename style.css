@@ -1,3 +1,4 @@
+/* Reset and general styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* Body styling to center the form container */
 body {
     display: flex;
     justify-content: center;
@@ -13,6 +15,7 @@ body {
     background-color: #f3f4f6;
 }
 
+/* Styling for the login form container */
 .login-container {
     width: 300px;
     padding: 20px;
@@ -22,21 +25,25 @@ body {
     text-align: center;
 }
 
+/* Title styling */
 h2 {
     margin-bottom: 20px;
     color: #333333;
 }
 
+/* Form group styling */
 .form-group {
     margin-bottom: 15px;
     text-align: left;
 }
 
+/* Label styling */
 label {
     font-size: 14px;
     color: #555555;
 }
 
+/* Input field styling */
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -47,12 +54,14 @@ input[type="password"] {
     font-size: 16px;
 }
 
+/* Input field focus styling */
 input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #4a90e2;
     outline: none;
 }
 
+/* Button styling */
 .login-button {
     width: 100%;
     padding: 10px;
@@ -64,7 +73,14 @@ input[type="password"]:focus {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.show-password {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555555;
+}
 
+
+/* Button hover effect */
 .login-button:hover {
     background-color: #357ABD;
 }

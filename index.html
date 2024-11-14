@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="#" method="post">
+        
+        <!-- Login form without action and method attributes -->
+        <form id="loginForm" onsubmit="return validateForm()">
+            
+            <!-- Username input field with label -->
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
             </div>
+            
+            <!-- Password input field with label -->
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
+                
+                <!-- Checkbox to toggle password visibility -->
+                <div class="show-password">
+                    <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+                    <label for="showPassword">Show Password</label>
+                </div>
             </div>
+            
+            <!-- Submit button for form -->
             <button type="submit" class="login-button">Login</button>
         </form>
     </div>
+
+    <!-- Link to external JavaScript file for form validation -->
+    <script src="script.js"></script>
 </body>
 </html>
