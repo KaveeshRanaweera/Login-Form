@@ -15,9 +15,16 @@ function validateForm() {
 // Function to toggle password visibility
 function togglePasswordVisibility() {
     const passwordField = document.getElementById("password");
+    const toggleIcon = document.getElementById("toggleIcon");
+
     if (passwordField.type === "password") {
         passwordField.type = "text"; // Show the password
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
     } else {
         passwordField.type = "password"; // Hide the password
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
     }
 }
+

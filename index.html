@@ -6,6 +6,7 @@
     <title>Login Form</title>
     <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/978e98736c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="login-container">
@@ -27,13 +28,13 @@
                 
                 <!-- Checkbox to toggle password visibility -->
                 <div class="show-password">
-                    <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
-                    <label for="showPassword">Show Password</label>
-                </div>
+                        <i class="fa-solid fa-eye-slash" id="toggleIcon" onclick="togglePasswordVisibility()"></i>
+                    </div>
+                    
             </div>
             
             <!-- Submit button for form -->
-            <button type="submit" class="login-button">Login</button>
+            <button type="submit" class="login-button"><i class="fa-solid fa-right-to-bracket"></i></button>
         </form>
     </div>
 
